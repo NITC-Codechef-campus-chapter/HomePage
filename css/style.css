@@ -1,0 +1,141 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.card-img-top {
+  width: 95%;
+  height: 50%;
+  object-fit: cover;
+}
+.jumbotron {
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  padding: 100px 25px;
+}
+.institute_name {
+  color: #fcfcfc;
+  transition: color 3s;
+}
+h2.institute_name {
+  font-size: 37px;
+  padding-top: 20%;
+}
+.navbar {
+  font-family: Montserrat, sans-serif;
+  box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px;
+  line-height: 1.42857143;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+nav {
+  transition: background 1.25s;
+}
+.navbar li a,
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 20px;
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #4f58a3;
+  background-color: #ffffff;
+}
+#myNavbar a {
+  color: #ffffff;
+  font-size: 17px;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #ffffff;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.logo {
+  color: #f4511e;
+  font-size: 200px;
+}
+#main_about {
+  background-image: url(../img/track.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+@media only screen and (max-device-width: 1000px) {
+  #main_about {
+    background-attachment: scroll;
+  }
+}
+#logo_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#staff {
+  text-align: center;
+  padding: 100px;
+}
+#event,
+#about,
+#staff {
+  text-align: center;
+}
+.staff-column {
+  padding: 3% 7%;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
